@@ -1,0 +1,96 @@
+/* Root Variables */
+:root {
+  --primary: #10a37f;      /* ChatGPT green */
+  --secondary: #202123;    /* Sidebar dark */
+  --accent: #40414f;       /* Chat bubble background */
+  --background: #343541;   /* Main background */
+  --user-bubble: #0ea5e9;
+  --assistant-bubble: #3e3f4b;
+  --text-color: #f5f5f5;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Chat Area */
+.chat-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  scrollbar-width: thin;
+}
+
+.chat-bubble {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: var(--shadow);
+}
+
+.assistant {
+  align-self: flex-start;
+  background-color: var(--assistant-bubble);
+}
+
+.user {
+  align-self: flex-end;
+  background-color: var(--user-bubble);
+  color: white;
+}
+
+/* Input Area */
+.chat-input {
+  display: flex;
+  padding: 0.75rem;
+  background-color: var(--secondary);
+  gap: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+}
+
+.chat-input button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.chat-input button:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,15 @@
+faiss-cpu
+langchain
+transformers
+torch
+accelerate
+sentence-transformers
+huggingface-hub
+python-dotenv
+fastapi
+uvicorn
+python-multipart
+pypdf
+beautifulsoup4
+lxml
+
