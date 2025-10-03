@@ -94,7 +94,7 @@ VECTOR_DB_PATH=./vector_store
 
 ``` bash
 cd backend
-uvicorn main:app --reload
+uvicorn app:app --reload
 ```
 
 ### **Frontend**
@@ -105,6 +105,13 @@ npm run dev
 ```
 
 Open: **http://localhost:5173**
+
+## Create Virtual Environment
+
+``` bash
+python -m venv venv
+venv\Scripts\activate
+```
 
 ------------------------------------------------------------------------
 
@@ -141,9 +148,3 @@ Open: **http://localhost:5173**
 
 Pull requests are welcome! For significant changes, please open an issue
 first.
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-This project is licensed under the MIT License.
